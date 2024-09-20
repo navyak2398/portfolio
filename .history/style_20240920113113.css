@@ -124,93 +124,20 @@ body {
     margin-bottom: 30px;
 }
 
-/* Portfolio section */
-#portfolio {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-    border-radius: 15px;
-}
-
-/* Portfolio heading */
-#portfolio h1 {
-    font-size: 36px;
-    color: #343a40;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-/* Portfolio card styling */
+/* Portfolio Section */
 #portfolio .card {
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #portfolio .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* No background color change */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Portfolio card image */
 #portfolio .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-#portfolio .card-img-top:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
-    /* Slight zoom effect */
-}
-
-/* Portfolio card title */
-#portfolio .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #343a40;
-}
-
-/* Portfolio card text */
-#portfolio .card-text {
-    font-size: 16px;
-    color: #6c757d;
-    margin-bottom: 20px;
-}
-
-/* Portfolio card button */
-#portfolio .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Button hover effect */
-#portfolio .btn:hover {
-    background-color: #218838;
-    color: white;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-    #portfolio .card {
-        margin-bottom: 30px;
-    }
-
-    #portfolio .card-title {
-        font-size: 20px;
-    }
-
-    #portfolio .card-text {
-        font-size: 14px;
-    }
-
-    #portfolio .btn {
-        width: 100%;
-    }
+    border-radius: 0.5rem;
 }
 
 /* Contact section styling */

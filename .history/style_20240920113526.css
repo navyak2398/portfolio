@@ -150,7 +150,6 @@ body {
 #portfolio .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* No background color change */
 }
 
 /* Portfolio card image */
@@ -163,7 +162,6 @@ body {
 #portfolio .card-img-top:hover {
     opacity: 0.9;
     transform: scale(1.02);
-    /* Slight zoom effect */
 }
 
 /* Portfolio card title */
