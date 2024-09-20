@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.hero_text {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero_title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.servicesText {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.servicesIcon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.btn-resume {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-resume:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.image_about {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+#embedmap-canvas {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-bottom: 10px;
+    }
+
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+}

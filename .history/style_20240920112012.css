@@ -255,6 +255,7 @@ button,
 /* Icon Color and Size */
 .servicesIcon {
     transition: color 0.3s ease;
+    background-color: #007bff;
 }
 
 /* Specific Background Color for Each Service */

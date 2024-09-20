@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Services</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -56,13 +56,18 @@
 
     <section class="container my-5" id="about">
         <div class="row">
-            <div class="about-me">
-                <p>I'm a full-stack developer specializing in Java/J2EE and React JS with 3 years of professional
+            <div class="col-lg-6 col-md-12">
+                <h2>About Me</h2>
+                <p>
+                    I'm a full-stack developer specializing in Java/J2EE and React JS with 3 years of professional
                     experience. Based in Toronto, I focus on delivering modern, scalable web applications, using AWS,
-                    Oracle, and MySQL.</p>
-                <a href="#skills" class="btn btn-primary">View skills</a>
+                    Oracle, and MySQL.
+                </p>
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
             </div>
-
+            <div class="col-lg-6 col-md-12 text-center">
+                <img src="profile-picture.jpg" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
         </div>
     </section>
 
@@ -106,94 +111,86 @@
                     </ul>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="resume/Navya_Bhavana_-_Full_Stack_Developer .pdf" class="btn btn-resume">
-                    View Resume
-                </a>
-                <a href="resume/Navya_Bhavana_-_Full_Stack_Developer .pdf" class="btn btn-download ms-3" download>
-                    Download
-                </a>
-            </div>
-
         </div>
     </section>
+    <div class="text-center mt-4"></div>
+    <a href="resume/Navya_Bhavana_-_Full_Stack_Developer.docx" class="btn btn-resume" target="_blank">Download
+        Resume</a>
+    </div>
     <section class="container section" id="services">
-        <h1 class="text-center mb-5">Services</h1>
-        <div class="row g-4">
-            <!-- Website Development -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-code servicesIcon fa-3x mb-3 text-primary"></i>
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
                         <h4 class="card-title mt-3">Website Development</h4>
-                        <p class="card-text mt-3">I specialize in crafting responsive, user-friendly websites optimized
-                            for performance and scalability. Using cutting-edge technologies, I bring your vision to
-                            life, from dynamic web applications to content management systems (CMS).</p>
+                        <p class="card-text mt-3"> I am specialized in crafting responsive, user-friendly websites that
+                            are
+                            optimized for performance and scalability by use cutting-edge technologies to bring your
+                            vision to life,
+                            from dynamic web applications to content management systems (CMS). We ensure seamless
+                            integration, security, and user engagement, delivering a website.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Website Design -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-palette servicesIcon fa-3x mb-3 text-success"></i>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
                         <h4 class="card-title mt-3">Website Design</h4>
-                        <p class="card-text mt-3">I believe in the power of design to capture attention and enhance user
-                            experiences. I blend creativity with user-centered principles to create stunning, intuitive
-                            interfaces that reflect your brand and engage your target audience.</p>
+                        <p class="card-text mt-3">I believe in the power of design to capture
+                            attention and enhance user experiences
+                            blend creativity with user-centered principles to create
+                            stunning, intuitive interfaces. I ensure that your web presence reflects your brand identity
+                            and
+                            engages your target audience effectively.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Website Deployment -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-server servicesIcon fa-3x mb-3 text-warning"></i>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
                         <h4 class="card-title mt-3">Website Deployment</h4>
-                        <p class="card-text mt-3">I handle the technical intricacies of server setup, configuration, and
-                            deployment, ensuring your website is live, secure, and accessible. I optimize for
-                            performance, security, and scalability for a seamless user experience.</p>
+                        <p class="card-text mt-3">handles the technical intricacies of server
+                            setup, configuration, and deployment, ensuring your website is live and accessible to your
+                            audience
+                            by optimizing performance, security, and scalability to provide
+                            a seamless user experience.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- SEO -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-search servicesIcon fa-3x mb-3 text-info"></i>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
                         <h4 class="card-title mt-3">SEO</h4>
-                        <p class="card-text mt-3">My SEO services are designed to boost your online presence and search
-                            engine rankings. I conduct thorough keyword research, on-page and off-page optimization, and
-                            strategic content development for better visibility.</p>
+                        <p class="card-text mt-3">SEO service is designed to boost your online
+                            presence and rankings in search engines. I conduct thorough keyword research, on-page and
+                            off-page
+                            optimization, and content strategy to optimize your website for search
+                            engines.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- QA (Quality Assurance) -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-bug servicesIcon fa-3x mb-3 text-danger"></i>
-                        <h4 class="card-title mt-3">QA & Testing</h4>
-                        <p class="card-text mt-3">My QA services ensure the reliability, functionality, and security of
-                            your software or website. I perform comprehensive testing, including functionality,
-                            usability, performance, and security checks, for high-quality outcomes.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Service Placeholder -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <i class="fas fa-cogs servicesIcon fa-3x mb-3 text-secondary"></i>
-                        <h4 class="card-title mt-3">Additional Service</h4>
-                        <p class="card-text mt-3">If you have other specific needs like custom app development, database
-                            management, or cloud integrations, feel free to reach out. I'm ready to provide tailor-made
-                            solutions for your business.</p>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">QA service is dedicated to ensuring the
+                            reliability, functionality, and security of your software or website.
+                            I conduct comprehensive testing, including functional,
+                            usability, performance, and security testing.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -202,7 +199,7 @@
     <!-- portfolio section-->
     <section class="section" id="portfolio">
         <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
+            h1 class="text-center">Portfolio</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
@@ -282,10 +279,6 @@
             });
         });
     </script>
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Navya Bhavana. All Rights Reserved.</p>
-    </footer>
     <!-- load javascript after loading all html content -->
     <script src="script.js"></script>
 

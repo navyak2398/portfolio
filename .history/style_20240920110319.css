@@ -118,6 +118,22 @@ body {
     /* Slight zoom effect on the portfolio image */
 }
 
+/* Button Hover Effect */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    /* Darken the green shade */
+    color: white;
+    /* Change text color on hover */
+}
 
 /* Center the Cards in Portfolio */
 .card {
@@ -169,60 +185,51 @@ footer p {
     display: none;
 }
 
-/* Common Button Styles for all buttons */
-button,
-.btn {
+/* Resume buttons */
+.btn-resume,
+.btn-download {
     padding: 10px 20px;
+    /* Equal padding for both buttons */
     font-size: 16px;
+    /* Same font size */
     border-radius: 5px;
-    width: 200px;
-    /* Same width for all buttons */
-    text-align: center;
+    /* Rounded corners for both */
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
+    /* Make text uppercase */
     display: inline-block;
-    font-weight: 600;
+    width: 180px;
+    /* Fixed width for both buttons */
+    text-align: center;
+    /* Align text center */
+    transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-/* Primary button style */
-.btn-primary,
+/* Styles for View Resume (Solid Button) */
 .btn-resume {
     background-color: #007bff;
+    /* Primary blue color */
     color: white;
     border: 2px solid #007bff;
 }
 
-.btn-primary:hover,
 .btn-resume:hover {
     background-color: #0056b3;
+    /* Darker blue on hover */
     border-color: #0056b3;
 }
 
-/* Outline button style */
-.btn-outline-primary,
+/* Styles for Download Resume (Outlined Button) */
 .btn-download {
-    background-color: #007bff;
-    color: white;
+    background-color: transparent;
+    color: #007bff;
     border: 2px solid #007bff;
 }
 
-.btn-outline-primary:hover,
 .btn-download:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-/* Skills button styling */
-.skill-btn {
-    background-color: transparent;
-    border: 2px solid #6c757d;
-    color: #6c757d;
-}
-
-.skill-btn:hover {
-    background-color: #6c757d;
+    background-color: #007bff;
+    /* Blue background on hover */
     color: white;
+    border-color: #0056b3;
 }
 
 .about-me {
@@ -259,10 +266,40 @@ button,
 
 /* Specific Background Color for Each Service */
 .card:nth-child(1):hover {
-    background-color: #0056b3;
+    background-color: #3498db;
     /* Blue for Website Development */
 }
 
+.card:nth-child(2):hover {
+    background-color: #2ecc71;
+    /* Green for Website Design */
+}
+
+.card:nth-child(3):hover {
+    background-color: #f39c12;
+    /* Orange for Website Deployment */
+}
+
+.card:nth-child(4):hover {
+    background-color: #e74c3c;
+    /* Red for SEO */
+}
+
+.card:nth-child(5):hover {
+    background-color: #9b59b6;
+    /* Purple for QA & Testing */
+}
+
+.card:nth-child(6):hover {
+    background-color: #95a5a6;
+    /* Grey for Additional Services */
+}
+
+/* Change Icon and Text Color on Hover */
+.card:hover .servicesIcon {
+    color: #fff;
+    /* Change the icon color to white */
+}
 
 .card:hover .card-title,
 .card:hover .card-text {

@@ -263,6 +263,36 @@ button,
     /* Blue for Website Development */
 }
 
+.card:nth-child(2):hover {
+    background-color: #2ecc71;
+    /* Green for Website Design */
+}
+
+.card:nth-child(3):hover {
+    background-color: #f39c12;
+    /* Orange for Website Deployment */
+}
+
+.card:nth-child(4):hover {
+    background-color: #e74c3c;
+    /* Red for SEO */
+}
+
+.card:nth-child(5):hover {
+    background-color: #9b59b6;
+    /* Purple for QA & Testing */
+}
+
+.card:nth-child(6):hover {
+    background-color: #95a5a6;
+    /* Grey for Additional Services */
+}
+
+/* Change Icon and Text Color on Hover */
+.card:hover .servicesIcon {
+    color: #fff;
+    /* Change the icon color to white */
+}
 
 .card:hover .card-title,
 .card:hover .card-text {

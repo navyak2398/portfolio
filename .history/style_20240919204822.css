@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    height: 100vh;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero_desc {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Services Section */
+.servicesText {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.servicesText:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.servicesIcon {
+    font-size: 4rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card:hover .servicesIcon {
+    color: #ffc107;
+}
+
+/* Skills Section */
+#skills .btn-outline-dark {
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#skills .btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Portfolio Section */
+#portfolio .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .card-img-top {
+    border-radius: 0.5rem;
+}
+
+/* Contact Form */
+form .form-control {
+    border-radius: 0.5rem;
+    border: 2px solid #007bff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Custom Button Styles */
+.btn-resume {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-resume:hover {
+    background-color: #ffc107;
+    transform: translateY(-5px);
+}
+
+.btn-outline-primary {
+    border: 2px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}

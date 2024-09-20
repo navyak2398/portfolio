@@ -1,0 +1,162 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero section */
+.hero_text {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background: url('images/banner-bg.jpg') no-repeat center center/cover;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Section styling */
+.section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* About section */
+.image_about {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+.resume-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.resume-button:hover {
+    background-color: #0056b3;
+}
+
+/* Card styles for services */
+.servicesText {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.servicesText:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.servicesIcon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Portfolio section */
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Contact section */
+#embedmap-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+}
