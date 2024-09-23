@@ -68,7 +68,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border: none;
     margin-bottom: 30px;
-    color: white;
+    color: #333;
     /* Change card text color to black */
 }
 
@@ -157,7 +157,7 @@ body {
 
 #portfolio .card-text {
     font-size: 16px;
-    color: black;
+    color: #ddd;
     /* Light gray for text */
     margin-bottom: 20px;
     flex-grow: 1;
@@ -282,14 +282,13 @@ button,
 .skill-btn {
     background-color: transparent;
     border: 2px solid #6c757d;
-    color: black;
+    color: #000;
     /* Change skills button text color to black */
 }
 
 .skill-btn:hover {
-    background-color: white;
+    background-color: #6c757d;
     color: white;
-    /* Change hover text color to black for contrast */
 }
 
 .about-me {
@@ -298,7 +297,6 @@ button,
     line-height: 1.6;
     text-align: center;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

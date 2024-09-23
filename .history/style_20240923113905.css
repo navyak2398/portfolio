@@ -2,10 +2,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #000;
-    /* Set background to black */
-    color: #fff;
-    /* Change text color to white for contrast */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Navbar */
@@ -68,14 +66,15 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border: none;
     margin-bottom: 30px;
-    color: white;
-    /* Change card text color to black */
+    color: #333;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     background-color: #0056b3;
+    color: #fff;
+    /* Change text color to white */
 }
 
 /* Icon Color and Size */
@@ -90,32 +89,27 @@ body {
 .card-title {
     font-weight: bold;
     color: #333;
-    /* Change card title color to black */
 }
 
 .card-text {
     color: #666;
-    /* Light gray for card text */
     transition: color 0.3s ease;
 }
 
 .card:hover .card-text {
     color: #fff;
-    /* Keep white on hover */
 }
 
 /* Portfolio section */
 #portfolio {
-    background-color: #000;
-    /* Set portfolio background to black */
+    background-color: #f8f9fa;
     padding: 50px 0;
     border-radius: 15px;
 }
 
 #portfolio h1 {
     font-size: 36px;
-    color: #fff;
-    /* Change title color to white */
+    color: #343a40;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -126,6 +120,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     height: 100%;
+    /* Ensure all cards are the same height */
     display: flex;
     flex-direction: column;
 }
@@ -140,7 +135,9 @@ body {
     border-top-right-radius: 15px;
     transition: all 0.3s ease-in-out;
     object-fit: cover;
+    /* Ensure image fills the card space */
     height: 200px;
+    /* Ensure uniform image size */
 }
 
 #portfolio .card-img-top:hover {
@@ -151,16 +148,15 @@ body {
 #portfolio .card-title {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    /* Change portfolio card title color to white */
+    color: #343a40;
 }
 
 #portfolio .card-text {
     font-size: 16px;
-    color: black;
-    /* Light gray for text */
+    color: #6c757d;
     margin-bottom: 20px;
     flex-grow: 1;
+    /* Ensures text occupies available space */
 }
 
 #portfolio .btn {
@@ -169,6 +165,7 @@ body {
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
     align-self: center;
+    /* Align button to center horizontally */
 }
 
 #portfolio .btn:hover {
@@ -178,8 +175,7 @@ body {
 
 /* Contact section styling */
 #contact {
-    background-color: #000;
-    /* Set contact section background to black */
+    background-color: #f8f9fa;
     padding: 50px 0;
     border-radius: 15px;
 }
@@ -188,13 +184,8 @@ form input,
 form textarea {
     border-radius: 10px;
     padding: 15px;
-    border: 2px solid #6c757d;
-    /* Change border color for contrast */
+    border: 2px solid #ced4da;
     transition: all 0.3s ease;
-    background-color: #222;
-    /* Dark background for input fields */
-    color: #fff;
-    /* White text for input fields */
 }
 
 form input:focus,
@@ -282,14 +273,12 @@ button,
 .skill-btn {
     background-color: transparent;
     border: 2px solid #6c757d;
-    color: black;
-    /* Change skills button text color to black */
+    color: #6c757d;
 }
 
 .skill-btn:hover {
-    background-color: white;
+    background-color: #6c757d;
     color: white;
-    /* Change hover text color to black for contrast */
 }
 
 .about-me {
@@ -298,7 +287,6 @@ button,
     line-height: 1.6;
     text-align: center;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

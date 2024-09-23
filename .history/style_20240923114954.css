@@ -157,7 +157,7 @@ body {
 
 #portfolio .card-text {
     font-size: 16px;
-    color: black;
+    color: #ddd;
     /* Light gray for text */
     margin-bottom: 20px;
     flex-grow: 1;
@@ -280,16 +280,15 @@ button,
 
 /* Skills button styling */
 .skill-btn {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid #6c757d;
-    color: black;
+    color: #000;
     /* Change skills button text color to black */
 }
 
 .skill-btn:hover {
-    background-color: white;
+    background-color: #6c757d;
     color: white;
-    /* Change hover text color to black for contrast */
 }
 
 .about-me {
@@ -298,7 +297,6 @@ button,
     line-height: 1.6;
     text-align: center;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

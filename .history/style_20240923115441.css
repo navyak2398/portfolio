@@ -288,7 +288,7 @@ button,
 
 .skill-btn:hover {
     background-color: white;
-    color: white;
+    color: black;
     /* Change hover text color to black for contrast */
 }
 
