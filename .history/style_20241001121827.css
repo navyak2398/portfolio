@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #ffc107;
     /* Highlight color on hover */
     transform: scale(1.1);
 }
@@ -378,7 +378,7 @@ footer p {
 
 /* Optional: Hover effect for fill color */
 .skill-progress-fill:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
     /* Darker shade on hover */
 }
 

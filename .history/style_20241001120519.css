@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #ffc107;
     /* Highlight color on hover */
     transform: scale(1.1);
 }
@@ -330,7 +330,6 @@ footer p {
 }
 
 /* Skill card styling */
-/* Skill card styling */
 .skill-card {
     background-color: transparent;
     /* No background color */
@@ -353,13 +352,11 @@ footer p {
 /* Progress bar styling */
 .skill-progress-bar {
     background-color: #007bff;
-    /* Make background transparent */
+    /* Bar color */
     height: 10px;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #007bff;
-    /* Optional: add a border for visibility */
 }
 
 /* Progress bar fill */
@@ -376,10 +373,47 @@ footer p {
     /* Set percentage text color to white */
 }
 
-/* Optional: Hover effect for fill color */
+/* Skill card styling */
+.skill-card {
+    background-color: transparent;
+    /* No background color */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar styling */
+.skill-progress-bar {
+    background-color: transparent;
+    /* No background color */
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Progress bar fill */
+.skill-progress-fill {
+    height: 100%;
+    background-color: #007bff;
+    /* Progress fill color */
+    transition: width 0.5s ease;
+    /* Transition for width change */
+}
+
+/* Remove hover effect on fill color */
 .skill-progress-fill:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
+    background-color: #007bff;
+    /* Keep the fill color the same */
 }
 
 /* Button styles */

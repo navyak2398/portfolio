@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #ffc107;
     /* Highlight color on hover */
     transform: scale(1.1);
 }
@@ -329,19 +329,32 @@ footer p {
     }
 }
 
-/* Skill card styling */
+/* Skills Section */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 36px;
+    color: #fff;
+    /* Changed heading color to white */
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
 /* Skill card styling */
 .skill-card {
-    background-color: transparent;
-    /* No background color */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Slightly transparent white */
     padding: 15px;
     border-radius: 10px;
     margin: 10px 0;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     z-index: 1;
-    color: white;
-    /* Set text color to white */
 }
 
 .skill-card:hover {
@@ -350,82 +363,19 @@ footer p {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Progress bar styling */
 .skill-progress-bar {
-    background-color: #007bff;
-    /* Make background transparent */
+    background-color: #6c757d;
+    /* Bar color */
     height: 10px;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #007bff;
-    /* Optional: add a border for visibility */
 }
 
 /* Progress bar fill */
 .skill-progress-fill {
     height: 100%;
     background-color: #007bff;
-    /* Fill color */
+    /* Progress fill color */
     transition: width 0.5s ease;
-}
-
-/* Text color for the percentage */
-.skill-percentage {
-    color: white;
-    /* Set percentage text color to white */
-}
-
-/* Optional: Hover effect for fill color */
-.skill-progress-fill:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-}
-
-/* Button styles */
-.btn-outline-dark {
-    background-color: #007bff;
-    /* Button background color */
-    color: black;
-    /* Button text color */
-    border: none;
-    /* Remove border for a cleaner look */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Transition for smooth effect */
-}
-
-.btn-outline-dark:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Scale effect on hover */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-}
-
-/* Button styles for Resume buttons */
-.btn-resume,
-.btn-download {
-    background-color: #007bff;
-    /* Button background color */
-    color: white;
-    /* Button text color */
-    border: none;
-    /* Remove border for a cleaner look */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Transition for smooth effect */
-    padding: 10px 20px;
-    /* Add padding for a better look */
-    font-size: 16px;
-    /* Font size */
-}
-
-.btn-resume:hover,
-.btn-download:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Scale effect on hover */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
 }

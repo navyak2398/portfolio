@@ -1,0 +1,202 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 70px;
+    /* To offset the fixed navbar */
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+.navbarScroll {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_text {
+    text-align: center;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* About Section */
+.about-me {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+#skills h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#skills .btn {
+    font-size: 1.2rem;
+}
+
+.list-group-item {
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#services .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+}
+
+#services .servicesIcon {
+    font-size: 4rem;
+}
+
+#services .card-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Service sliding effect */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#services .card {
+    animation: slideIn 0.8s ease-in-out;
+}
+
+#services .col-lg-4:nth-child(odd) .card {
+    animation-delay: 0.2s;
+}
+
+#services .col-lg-4:nth-child(even) .card {
+    animation-delay: 0.4s;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f4f4f9;
+    padding: 60px 0;
+}
+
+#portfolio h1 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+#contact h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+
+    #services .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    .hero_desc {
+        font-size: 1rem;
+    }
+
+    #services .servicesIcon {
+        font-size: 3rem;
+    }
+
+    #portfolio h1,
+    #contact h1 {
+        font-size: 2rem;
+    }
+}

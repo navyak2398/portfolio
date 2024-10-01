@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #ffc107;
     /* Highlight color on hover */
     transform: scale(1.1);
 }
@@ -365,7 +365,7 @@ footer p {
 /* Progress bar fill */
 .skill-progress-fill {
     height: 100%;
-    background-color: #007bff;
+    background-color: white;
     /* Fill color */
     transition: width 0.5s ease;
 }

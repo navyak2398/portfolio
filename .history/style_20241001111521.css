@@ -3,9 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #000;
-    /* Changed to black */
     color: #fff;
-    /* Keep text white for visibility */
     overflow-x: hidden;
     animation: fadeIn 1s ease-in-out;
 }
@@ -29,13 +27,11 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
-    /* Keep link color white */
     transition: color 0.3s ease, transform 0.5s;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
-    /* Highlight color on hover */
+    color: #ffc107;
     transform: scale(1.1);
 }
 
@@ -50,7 +46,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    /* Keep text white */
     position: relative;
     animation: slideInDown 1.5s ease-out;
 }
@@ -102,8 +97,7 @@ body {
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
     border: none;
     margin-bottom: 30px;
-    color: black;
-    /* Keep card text white */
+    color: white;
     animation: slideInLeft 1s ease-in-out;
 }
 
@@ -147,7 +141,6 @@ body {
 #portfolio h1 {
     font-size: 36px;
     color: #fff;
-    /* Keep heading color white */
     font-weight: bold;
     margin-bottom: 30px;
     animation: zoomIn 1s ease;
@@ -222,9 +215,7 @@ form textarea {
     border: 2px solid #6c757d;
     transition: all 0.3s ease;
     background-color: #222;
-    /* Dark input background */
     color: #fff;
-    /* White text for inputs */
 }
 
 form input:focus,
@@ -238,9 +229,7 @@ form button {
     width: 100%;
     padding: 15px;
     background-color: #28a745;
-    /* Button color */
     color: white;
-    /* Button text color */
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
@@ -256,9 +245,7 @@ form button:hover {
 /* Footer */
 footer {
     background-color: #343a40;
-    /* Footer background */
     color: #fff;
-    /* Footer text color */
     padding: 1rem 0;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
@@ -329,103 +316,156 @@ footer p {
     }
 }
 
-/* Skill card styling */
+/* Skills Section */
+#skills {
+    padding: 50px 0;
+    background-color: #000;
+    /* Set background to black */
+    text-align: center;
+}
+
+#skills h1 {
+    font-size: 36px;
+    color: #fff;
+    /* Change title color to white */
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Skills container */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Skill card styling */
 .skill-card {
-    background-color: transparent;
-    /* No background color */
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     z-index: 1;
-    color: white;
-    /* Set text color to white */
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     /* Zoom effect on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Progress bar styling */
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.5s ease;
+}
+
+.skill-card:hover .skill-icon {
+    color: #ffc107;
+    transform: rotate(360deg);
+    /* Rotate icon on hover */
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .skill-progress-bar {
-    background-color: #007bff;
-    /* Make background transparent */
+    background-color: #333;
+    border-radius: 50px;
     height: 10px;
-    border-radius: 5px;
-    position: relative;
     overflow: hidden;
-    border: 1px solid #007bff;
-    /* Optional: add a border for visibility */
+    position: relative;
+    margin: 10px 0;
 }
 
-/* Progress bar fill */
-.skill-progress-fill {
+.skill-progress-bar::before {
+    content: '';
+    display: block;
     height: 100%;
-    background-color: #007bff;
-    /* Fill color */
-    transition: width 0.5s ease;
+    background-color: #28a745;
+    border-radius: 50px;
+    width: 0;
+    animation: progressAnimation 2s ease-in-out forwards;
 }
 
-/* Text color for the percentage */
+/* Skill level percentage text */
 .skill-percentage {
-    color: white;
-    /* Set percentage text color to white */
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 14px;
+    color: #ffc107;
 }
 
-/* Optional: Hover effect for fill color */
-.skill-progress-fill:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
+/* Animation for progress bar filling */
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--skill-level);
+    }
 }
 
-/* Button styles */
-.btn-outline-dark {
-    background-color: #007bff;
-    /* Button background color */
-    color: black;
-    /* Button text color */
-    border: none;
-    /* Remove border for a cleaner look */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Transition for smooth effect */
+/* Hover animation for skill cards */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.btn-outline-dark:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Scale effect on hover */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-}
-
-/* Button styles for Resume buttons */
-.btn-resume,
-.btn-download {
-    background-color: #007bff;
-    /* Button background color */
-    color: white;
-    /* Button text color */
-    border: none;
-    /* Remove border for a cleaner look */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Transition for smooth effect */
+/* Button styles for skills section */
+.skill-btn {
+    margin-top: 20px;
     padding: 10px 20px;
-    /* Add padding for a better look */
+    background-color: transparent;
+    border: 2px solid #6c757d;
+    color: #fff;
+    /* Change text color to white */
     font-size: 16px;
-    /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-resume:hover,
-.btn-download:hover {
+.skill-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Skill card zoom-in on hover */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
     background-color: #0056b3;
-    /* Darker shade on hover */
-    transform: scale(1.05);
-    /* Scale effect on hover */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
+    /* Background color changes */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
 }

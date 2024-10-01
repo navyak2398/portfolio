@@ -1,0 +1,330 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    /* Set background to black */
+    color: #fff;
+    /* Change text color to white for contrast */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Hero section background image styling */
+.hero-section {
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+/* Optional overlay for better text visibility */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero_text {
+    z-index: 2;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* General Card Hover Effect for Services */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: none;
+    margin-bottom: 30px;
+    color: white;
+    /* Change card text color to black */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #0056b3;
+}
+
+/* Icon Color and Size */
+.servicesIcon {
+    transition: color 0.3s ease;
+}
+
+.card:hover .servicesIcon {
+    color: #f39c12;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+    /* Change card title color to black */
+}
+
+.card-text {
+    color: #666;
+    /* Light gray for card text */
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-text {
+    color: #fff;
+    /* Keep white on hover */
+}
+
+/* Portfolio section */
+#portfolio {
+    background-color: #000;
+    /* Set portfolio background to black */
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+#portfolio h1 {
+    font-size: 36px;
+    color: #fff;
+    /* Change title color to white */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#portfolio .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    height: 200px;
+}
+
+#portfolio .card-img-top:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+#portfolio .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* Change portfolio card title color to white */
+}
+
+#portfolio .card-text {
+    font-size: 16px;
+    color: black;
+    /* Light gray for text */
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+#portfolio .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    align-self: center;
+}
+
+#portfolio .btn:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* Contact section styling */
+#contact {
+    background-color: #000;
+    /* Set contact section background to black */
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+form input,
+form textarea {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #6c757d;
+    /* Change border color for contrast */
+    transition: all 0.3s ease;
+    background-color: #222;
+    /* Dark background for input fields */
+    color: #fff;
+    /* White text for input fields */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Remove profile picture */
+#about .img-fluid {
+    display: none;
+}
+
+/* Common Button Styles */
+button,
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* Primary button style */
+.btn-primary,
+.btn-resume {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+.btn-primary:hover,
+.btn-resume:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Outline button style */
+.btn-outline-primary,
+.btn-download {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+.btn-outline-primary:hover,
+.btn-download:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Skills button styling */
+.skill-btn {
+    background-color: transparent;
+    border: 2px solid #6c757d;
+    color: black;
+    /* Change skills button text color to black */
+}
+
+.skill-btn:hover {
+    background-color: white;
+    color: white;
+    /* Change hover text color to black for contrast */
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #portfolio .card {
+        margin-bottom: 30px;
+    }
+
+    #portfolio .card-title {
+        font-size: 20px;
+    }
+
+    #portfolio .card-text {
+        font-size: 14px;
+    }
+
+    #portfolio .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #embedmap-canvas {
+        margin-bottom: 20px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}

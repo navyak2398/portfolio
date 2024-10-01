@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0056b3;
+    color: #ffc107;
     /* Highlight color on hover */
     transform: scale(1.1);
 }
@@ -329,7 +329,22 @@ footer p {
     }
 }
 
-/* Skill card styling */
+/* Skills Section */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 36px;
+    color: #fff;
+    /* Changed heading color to white */
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
 /* Skill card styling */
 .skill-card {
     background-color: transparent;
@@ -340,8 +355,6 @@ footer p {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     z-index: 1;
-    color: white;
-    /* Set text color to white */
 }
 
 .skill-card:hover {
@@ -352,32 +365,25 @@ footer p {
 
 /* Progress bar styling */
 .skill-progress-bar {
-    background-color: #007bff;
-    /* Make background transparent */
+    background-color: transparent;
+    /* No background color */
     height: 10px;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #007bff;
-    /* Optional: add a border for visibility */
 }
 
 /* Progress bar fill */
 .skill-progress-fill {
     height: 100%;
     background-color: #007bff;
-    /* Fill color */
-    transition: width 0.5s ease;
+    /* Progress fill color */
+    transition: width 0.5s ease, background-color 0.5s ease;
+    /* Added transition for hover effect */
 }
 
-/* Text color for the percentage */
-.skill-percentage {
-    color: white;
-    /* Set percentage text color to white */
-}
-
-/* Optional: Hover effect for fill color */
-.skill-progress-fill:hover {
+/* Change fill color on skill card hover */
+.skill-card:hover .skill-progress-fill {
     background-color: #0056b3;
     /* Darker shade on hover */
 }
