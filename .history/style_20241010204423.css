@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #0b0b0b;
+    /* Dark background */
+    color: #ffffff;
+    /* White text for visibility */
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade in animation for body */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease, transform 0.5s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    /* Keep link color white */
+    transition: color 0.3s ease, transform 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f39c12;
+    /* Highlight color on hover */
+    transform: scale(1.1);
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: slideInDown 1.5s ease-out;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+    /* Dark overlay */
+}
+
+/* Slide down animation for hero section */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero_text {
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero_title {
+    font-size: 4rem;
+    /* Larger font size */
+    font-weight: bold;
+    animation: zoomIn 1.5s ease;
+}
+
+.hero_desc {
+    font-size: 1.75rem;
+    /* Larger description font */
+    margin-top: 20px;
+    animation: zoomIn 1.5s ease 0.3s;
+}
+
+/* General Card Hover Effect for Services */
+.card {
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border: none;
+    margin-bottom: 30px;
+    color: #fff;
+    /* Card text color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark card background */
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Card hover effects */
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Portfolio section */
+#portfolio {
+    background-color: #0b0b0b;
+    /* Dark background */
+    padding: 50px 0;
+    border-radius: 15px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#portfolio h1 {
+    font-size: 36px;
+    color: #f39c12;
+    /* Gold heading color */
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: zoomIn 1s ease;
+}
+
+/* Progress bar styling */
+.skill-progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light transparent background */
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Progress bar fill */
+.skill-progress-fill {
+    height: 100%;
+    background-color: #f39c12;
+    /* Fill color */
+    transition: width 0.5s ease;
+}
+
+/* Contact section styling */
+#contact {
+    background-color: #1a1a1a;
+    /* Darker background */
+    padding: 50px 0;
+    border-radius: 15px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Button styles */
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f39c12;
+    /* Button color */
+    color: #000;
+    /* Button text color */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+form button:hover {
+    background-color: #e67e22;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    /* Footer background */
+    color: #fff;
+    /* Footer text color */
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+}

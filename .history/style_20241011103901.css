@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #eed61b;
+    color: #1e88e5;
     /* Lighter blue highlight */
     transform: scale(1.1);
 }

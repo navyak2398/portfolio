@@ -29,13 +29,13 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #1e88e5;
+    color: #e0e0e0;
     /* Softer link color */
     transition: color 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #eed61b;
+    color: #1e88e5;
     /* Lighter blue highlight */
     transform: scale(1.1);
 }
@@ -55,14 +55,14 @@ body {
     flex: 1;
     padding-right: 20px;
     /* Reduced padding-right for less space */
-    font-size: 3.5em;
+    font-size: 1.5em;
     /* Increased font size */
 }
 
 .fade-in-slide {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInSlide 3s forwards;
+    animation: fadeInSlide 1s forwards;
 }
 
 @keyframes fadeInSlide {
@@ -84,47 +84,46 @@ body {
     max-width: 300px;
     height: auto;
     border-radius: 0;
-    transition: transform 1.3s ease, box-shadow 1.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image:hover {
-    transform: scale(2.05);
+    transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Name hover effect with bounce */
+/* Name hover effect */
 .name-highlight {
     transition: transform 0.3s ease, color 0.3s ease;
     color: #1e88e5;
-    /* Initial color */
+    /* Smooth transition for scaling and color */
 }
 
 .name-highlight:hover {
-    animation: bounce 0.3s ease forwards;
-    color: #eed61b;
+    transform: scale(1.2);
+    /* Slightly increase size on hover */
+    color: #0a2e4e;
     /* Change color on hover */
 }
 
-/* Bounce effect */
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0) scale(1.05);
-        /* Scales up slightly */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    40% {
-        transform: translateY(-30px) scale(1.2);
-        /* Bounces up */
+    .intro {
+        padding-right: 0;
+        /* Remove right padding for smaller screens */
+        padding-bottom: 10px;
+        /* Adjust space below text */
     }
 
-    60% {
-        transform: translateY(-15px) scale(1.1);
-        /* Second smaller bounce */
+    .profile-image {
+        max-width: 90%;
+        /* Allow image to be responsive */
     }
 }
 
@@ -398,11 +397,14 @@ footer p {
 
 /* Change fill color on hover */
 .skill-card:hover .skill-progress-fill {
+    background-color: #007bff;
+    /* Change fill color on hover */
+}
+
+.skill-progress-fill:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* Button styles */
 .btn-resume,
@@ -428,12 +430,12 @@ footer p {
 }
 
 .btn-download {
-    background-color: #1e88e5;
+    background-color: #0056b3;
     /* Set color for download button */
 }
 
 .btn-download:hover {
-    background-color: #0056b3;
+    background-color: #004494;
     /* Darker shade on hover */
 }
 

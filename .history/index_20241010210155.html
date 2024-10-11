@@ -28,10 +28,10 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#skills">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -47,92 +47,135 @@
     <!-- Hero Section -->
     <section class="container-fluid hero-section bgimage" id="home">
         <div class="row justify-content-center align-items-center text-center vh-100">
-            <div class="intro">
-                <h1 class="fade-in-slide">Hi, I'm <span class="name-highlight">Navya Bhavana</span></h1>
-                <p class="fade-in-slide">A professional Full Stack Developer based in Toronto</p>
+            <div class="col-12 hero_text">
+                <h1 class="hero_title">Hi, I'm Navya Bhavana</h1>
+                <p class="hero_desc">A professional Full Stack Developer based in Toronto</p>
+                <a href="#portfolio" class="btn btn-outline-light mt-4">Learn More</a>
             </div>
-            <div class="image-container">
-                <img src="images/navya.jpg" alt="Navya Bhavana" class="profile-image" />
-            </div>
-
         </div>
     </section>
 
     <section class="container my-5" id="skills">
         <h2 class="text-center">Skills</h2>
-        <div class="text-center">
-            <span class="skill-card" data-skill-level="85">
-                React JS
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 85%;"></div>
+        <div class="row">
+            <!-- Frontend Skills -->
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <button class="btn btn-outline-dark w-100 my-2" data-bs-toggle="collapse"
+                    data-bs-target="#frontendSkills">
+                    Frontend
+                </button>
+                <div id="frontendSkills" class="collapse">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item skill-card" data-skill-level="85">
+                            React JS
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="90">
+                            HTML5 & CSS3
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="75">
+                            Bootstrap
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="80">
+                            JavaScript (ES6+)
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </li>
+                    </ul>
                 </div>
-            </span>
-            <span class="skill-card" data-skill-level="90">
-                HTML5 & CSS3
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <button class="btn btn-outline-dark w-100 my-2" data-bs-toggle="collapse"
+                    data-bs-target="#backendSkills">
+                    Backend
+                </button>
+                <div id="backendSkills" class="collapse">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item skill-card" data-skill-level="90">
+                            Java/J2EE
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="85">
+                            Spring Framework
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="80">
+                            RESTful APIs
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="70">
+                            Node.js
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </li>
+                    </ul>
                 </div>
-            </span>
-            <span class="skill-card" data-skill-level="75">
-                Bootstrap
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+
+            <!-- Cloud & Databases -->
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <button class="btn btn-outline-dark w-100 my-2" data-bs-toggle="collapse" data-bs-target="#cloudSkills">
+                    Cloud & Databases
+                </button>
+                <div id="cloudSkills" class="collapse">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item skill-card" data-skill-level="80">
+                            AWS
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="75">
+                            Oracle DB
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="80">
+                            MySQL
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </li>
+                        <li class="list-group-item skill-card" data-skill-level="70">
+                            MongoDB
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </li>
+                    </ul>
                 </div>
-            </span>
-            <span class="skill-card" data-skill-level="95">
-                JavaScript (ES6+)
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="90">
-                Java/J2EE
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="85">
-                Spring Framework
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="80">
-                RESTful APIs
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="70">
-                Node.js
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="80">
-                AWS
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="75">
-                Oracle DB
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 75%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="80">
-                MySQL
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-            </span>
-            <span class="skill-card" data-skill-level="70">
-                MongoDB
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-            </span>
+            </div>
         </div>
         <div class="text-center mt-4">
             <a href="resume/Navya_Bhavana_-_Full_Stack_Developer .pdf" class="btn btn-resume">

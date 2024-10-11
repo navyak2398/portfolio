@@ -29,105 +29,98 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #1e88e5;
+    color: #e0e0e0;
     /* Softer link color */
     transition: color 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #eed61b;
+    color: #1e88e5;
     /* Lighter blue highlight */
     transform: scale(1.1);
 }
 
 /* Hero section */
-.intro-container {
+.hero-section {
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    animation: slideInDown 1.5s ease-out;
 }
 
-.intro {
-    text-align: right;
-    flex: 1;
-    padding-right: 20px;
-    /* Reduced padding-right for less space */
-    font-size: 3.5em;
-    /* Increased font size */
-}
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
 
-.fade-in-slide {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInSlide 3s forwards;
-}
-
-@keyframes fadeInSlide {
-    to {
-        opacity: 1;
+    100% {
         transform: translateY(0);
     }
 }
 
-.image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.profile-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 0;
-    transition: transform 1.3s ease, box-shadow 1.3s ease;
+.fade-in-slide {
+    opacity: 0;
+    /* Start as invisible */
+    transform: translateY(20px);
+    /* Start slightly lower */
+    animation: fadeInSlide 1s forwards;
+    /* Trigger animation */
 }
 
-.profile-image:hover {
-    transform: scale(2.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+.highlight {
+    color: #00bcd4;
+    /* Highlight color */
+    font-weight: bold;
 }
 
-/* Name hover effect with bounce */
-.name-highlight {
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: #1e88e5;
-    /* Initial color */
-}
-
-.name-highlight:hover {
-    animation: bounce 0.3s ease forwards;
-    color: #eed61b;
-    /* Change color on hover */
-}
-
-/* Bounce effect */
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0) scale(1.05);
-        /* Scales up slightly */
-    }
-
-    40% {
-        transform: translateY(-30px) scale(1.2);
-        /* Bounces up */
-    }
-
-    60% {
-        transform: translateY(-15px) scale(1.1);
-        /* Second smaller bounce */
+/* Animation keyframes */
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        /* End as fully visible */
+        transform: translateY(0);
+        /* End in original position */
     }
 }
 
+/* Delay animations for multiple elements */
+.fade-in-slide:nth-child(1) {
+    animation-delay: 0.5s;
+    /* Delay for the first element */
+}
+
+.fade-in-slide:nth-child(2) {
+    animation-delay: 1s;
+    /* Delay for the second element */
+}
+
+.hero_text {
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: zoomIn 1.5s ease;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: zoomIn 1.5s ease 0.3s;
+}
 
 /* Zoom in animation */
 @keyframes zoomIn {
@@ -177,7 +170,7 @@ body {
 }
 
 .card:hover .servicesIcon {
-    color: #1e88e5;
+    color: #f39c12;
     /* Gold icon color on hover */
     transform: rotate(360deg);
 }
@@ -281,7 +274,7 @@ form textarea:focus {
 form button {
     width: 100%;
     padding: 15px;
-    background-color: #1e88e5;
+    background-color: #28a745;
     /* Button color */
     color: #fff;
     /* Button text color */
@@ -293,7 +286,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #1e88e5;
+    background-color: #218838;
     /* Darker shade on hover */
     transform: scale(1.05);
 }
@@ -313,136 +306,97 @@ footer p {
     margin: 0;
 }
 
-/* General styling for the skills section */
-#skills {
-    padding: 60px 0;
-    /* Increased padding for more space */
-    background-color: #121212;
-    /* Set background color to black */
-}
-
-#skills h2 {
-    font-size: 2.5rem;
-    /* Heading font size */
-    margin-bottom: 40px;
-    /* Increased margin for more space */
-    color: white;
-    /* Change heading color to white */
-    text-align: center;
-    /* Center-align heading */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* Subtle text shadow for better visibility */
-}
-
-.skill-container {
-    display: grid;
-    /* Use CSS Grid for layout */
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns */
-    gap: 50px;
-    /* Increased space between the cards */
-    max-width: 1200px;
-    /* Max width for the container */
-    margin: 0 auto;
-    /* Center the container */
-    padding: 0 20px;
-    /* Add some horizontal padding */
-}
-
+/* Skill card styling */
 .skill-card {
     background-color: transparent;
-    /* Semi-transparent background for skill card */
-    border: 1px solid transparent;
-    border-radius: 3px;
-    /* Increased border radius for a softer look */
-    padding: 20px;
-    /* Increased padding for better spacing */
-    box-shadow: 0 2px 15px transparent;
-    /* Increased shadow for better visibility */
-    transition: box-shadow 0.3s, transform 0.3s;
-    /* Add transition for scaling effect */
-    text-align: left;
+    /* No background color */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
-    /* Relative positioning to avoid overflow */
+    z-index: 1;
+    color: #fff;
+    /* Set text color to white */
 }
 
 .skill-card:hover {
-    box-shadow: 0 8px 20px rgba(4, 1, 68, 0.5);
-    /* Lighter shadow on hover */
-    transform: scale(2.05);
-    /* Slightly scale up on hover */
-    z-index: 10;
-    /* Bring hovered card to the front */
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Progress bar styling */
 .skill-progress-bar {
     background-color: transparent;
-    /* Semi-transparent background for progress bar */
+    /* Make background transparent */
+    height: 10px;
     border-radius: 5px;
-    height: 12px;
-    /* Slightly increased height for better visibility */
-    margin-top: 15px;
-    /* Increased margin for spacing */
+    position: relative;
     overflow: hidden;
-    width: 100%;
-    /* Fill the entire width of the container */
+    border: 1px solid #007bff;
+    /* Optional: add a border for visibility */
 }
 
+/* Progress bar fill */
 .skill-progress-fill {
     height: 100%;
-    background-color: #0056b3;
-    /* Set fill color to #0056b3 */
-    border-radius: 5px;
-    transition: width 0.4s ease;
+    background-color: #007bff;
+    /* Fill color */
+    transition: width 0.5s ease;
 }
 
-/* Change fill color on hover */
-.skill-card:hover .skill-progress-fill {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+/* Text color for the percentage */
+.skill-percentage {
+    color: #fff;
+    /* Set percentage text color to white */
 }
 
-
-
-/* Button styles */
+/* Button styles for Resume buttons */
+.btn-outline-dark,
 .btn-resume,
 .btn-download {
-    padding: 12px 24px;
-    /* Increased padding for buttons */
     background-color: #007bff;
-    /* Bootstrap primary color */
+    /* Button background color */
     color: #fff;
+    /* Button text color */
     border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    margin: 0 10px;
-    /* Space between buttons */
+    /* Remove border for a cleaner look */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transition for smooth effect */
+    padding: 10px 20px;
+    /* Add padding for a better look */
+    font-size: 16px;
+    /* Font size */
 }
 
+.btn-outline-dark:hover,
 .btn-resume:hover,
 .btn-download:hover {
     background-color: #0056b3;
     /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
 }
 
-.btn-download {
-    background-color: #1e88e5;
-    /* Set color for download button */
-}
-
-.btn-download:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .skill-container {
-        grid-template-columns: 1fr;
-        /* Stack cards on small screens */
-    }
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    /* Dark background color */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around the footer */
+    text-align: center;
+    /* Center the text */
+    position: relative;
+    /* Allows positioning of child elements if needed */
+    bottom: 0;
+    /* Ensure footer sticks to bottom */
+    width: 100%;
+    /* Full width */
 }
 
 /* Footer styles */

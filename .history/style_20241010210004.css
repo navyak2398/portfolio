@@ -1,0 +1,359 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    /* Darker background for a sleek look */
+    color: #e0e0e0;
+    /* Softer white for text */
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade in animation for body */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.9);
+    /* Slightly transparent dark navbar */
+    transition: background-color 0.3s ease, transform 0.5s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0;
+    /* Softer link color */
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1e88e5;
+    /* Lighter blue highlight */
+    transform: scale(1.1);
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: slideInDown 1.5s ease-out;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero_text {
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: zoomIn 1.5s ease;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: zoomIn 1.5s ease 0.3s;
+}
+
+/* Zoom in animation */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+    border: none;
+    margin-bottom: 30px;
+    color: #fff;
+    /* White text for cards */
+    background-color: #1e1e1e;
+    /* Darker card background */
+    animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Icon Color and Size */
+.servicesIcon {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .servicesIcon {
+    color: #f39c12;
+    /* Gold icon color on hover */
+    transform: rotate(360deg);
+}
+
+/* Portfolio section */
+#portfolio {
+    background-color: #121212;
+    padding: 50px 0;
+    border-radius: 15px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#portfolio h1 {
+    font-size: 36px;
+    color: #e0e0e0;
+    /* Heading color */
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: zoomIn 1s ease;
+}
+
+#portfolio .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: slideInUp 1s ease;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#portfolio .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    height: 200px;
+}
+
+#portfolio .card-img-top:hover {
+    transform: scale(1.05);
+}
+
+/* Contact section styling */
+#contact {
+    background-color: #121212;
+    padding: 50px 0;
+    border-radius: 15px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+form input,
+form textarea {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #6c757d;
+    transition: all 0.3s ease;
+    background-color: #222;
+    /* Dark input background */
+    color: #e0e0e0;
+    /* White text for inputs */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #1e88e5;
+    /* Blue focus border */
+    box-shadow: 0 0 10px rgba(30, 136, 229, 0.7);
+}
+
+/* Button styles */
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    /* Button color */
+    color: #fff;
+    /* Button text color */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    /* Dark footer background */
+    color: #e0e0e0;
+    /* Footer text color */
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Skill card styling */
+.skill-card {
+    background-color: transparent;
+    /* No background color */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    /* Set text color to white */
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress bar styling */
+.skill-progress-bar {
+    background-color: transparent;
+    /* Make background transparent */
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #007bff;
+    /* Optional: add a border for visibility */
+}
+
+/* Progress bar fill */
+.skill-progress-fill {
+    height: 100%;
+    background-color: #007bff;
+    /* Fill color */
+    transition: width 0.5s ease;
+}
+
+/* Text color for the percentage */
+.skill-percentage {
+    color: #fff;
+    /* Set percentage text color to white */
+}
+
+/* Button styles for Resume buttons */
+.btn-outline-dark,
+.btn-resume,
+.btn-download {
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* Remove border for a cleaner look */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transition for smooth effect */
+    padding: 10px 20px;
+    /* Add padding for a better look */
+    font-size: 16px;
+    /* Font size */
+}
+
+.btn-outline-dark:hover,
+.btn-resume:hover,
+.btn-download:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    /* Dark background color */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around the footer */
+    text-align: center;
+    /* Center the text */
+    position: relative;
+    /* Allows positioning of child elements if needed */
+    bottom: 0;
+    /* Ensure footer sticks to bottom */
+    width: 100%;
+    /* Full width */
+}
